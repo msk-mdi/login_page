@@ -1,10 +1,9 @@
 <?php
 include('../header/header.php');
 
-if(empty($_SESSION['id'])){
-    ?>
-        <!DOCTYPE html>
-        <html lang="en">
+if(empty($_SESSION['id'])){?>
+    <!DOCTYPE html>
+    <html lang="en">
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,10 +22,9 @@ if(empty($_SESSION['id'])){
                 <a href="../register/register.php">Register now</a>
             </div>
         </body>
-        </html>
-<?php
+    </html><?php
 }
-else{
+else {
     header('location: ../index.php');
 }
 ?>
